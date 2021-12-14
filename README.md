@@ -1,5 +1,10 @@
-# Parser
-Parser project - CS 4150
+# Parser project - CS 4450
 
 
-Kylee Willis (kwcnr)
+## Group member: 
+  Kylee Willis (kwcnr)
+    (Contribution amount - 100/100 :) )
+    
+## SETUP / ENVIRONMENTAL STEPS
+
+## HOW TO RUN
