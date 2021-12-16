@@ -1,1 +1,10 @@
 ## eee
+[stackoverflow antlr working](https://stackoverflow.com/questions/41021963/how-to-install-antlr4)
+[github antlr working (use this!!)](https://github.com/antlr/antlr4/blob/master/doc/getting-started.md)
+[grammars](https://github.com/antlr/grammars-v4/blob/master/python/python3-py/Python3.g4)
+[usage??](https://stackoverflow.com/questions/48555825/antlr4-is-there-a-simple-example-of-using-the-parsetree-walker)
+[huh this matches some of my code. didn't use it, but interesting.](https://stackoverflow.com/questions/15610183/if-else-statements-in-antlr-using-listeners)
+["mega tutorial"](https://tomassetti.me/antlr-mega-tutorial/)
+[that... json one](https://www.willowtreeapps.com/craft/an-introduction-to-language-lexing-and-parsing-with-antlr)
+[download java](https://www.java.com/download/ie_manual.jsp)
+[if you wanna try to get vscode working](https://github.com/redhat-developer/vscode-java/issues/346)
