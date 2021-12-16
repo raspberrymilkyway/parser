@@ -6,14 +6,20 @@
   
     (Contribution amount - 100/100 :) )
     
+## EXPLANATION
+"Python.g4" is the grammar file upon which I ran ANTLR.
+  
+My project attempts to create a parse tree from python_test_code.py. Frankly, I have no idea how well it works, because I can't figure out how to run it, but each individual line I've tested works. Most of the grammar I wrote can be used on any Python 3 file, I think, but some of it is specific to the test code because I couldn't figure out how to work around that.
+  
+
 ## SETUP / ENVIRONMENTAL STEPS
 ????
 
 ## HOW TO RUN
-I have no idea.
+I have no idea. It's causing me problems.
 
 ---
-### HOW I TESTED INDIVIDUAL LINES, BECAUSE I KNOW THAT I WILL FORGET
+### HOW I TESTED INDIVIDUAL LINES, because I know I will forget
 - antlr4 (name).g4
 - javac (name)*.java
 - type test.py | grun (name) (rule) -gui
