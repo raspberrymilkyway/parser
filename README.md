@@ -42,6 +42,9 @@ Actually running on the whole file would, I think, require one to import the lex
 
 TLDR; you'd need a script to call the lexer and parser created upon the test file.
 
+## DEMO
+https://youtu.be/T2lkFJEIefM - can't submit a link on the Parser Project page, for some reason.
+
 ---
 ---
 ---
