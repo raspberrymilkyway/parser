@@ -2,7 +2,7 @@
 
 ---
 
-## Group member: 
+## GROUP MEMBER: 
   Kylee Willis (kwcnr)
   
     (Contribution amount - 100/100 :) )
@@ -10,8 +10,11 @@
 ## EXPLANATION
 "Python.g4" is the grammar file upon which I ran ANTLR.
   
-My project attempts to create a parse tree from python_test_code.py. Frankly, I have no idea how well it works, because I can't figure out how to run it, but each individual line I've tested works. Most of the grammar I wrote can be used on any Python 3 file, I think, but some of it is specific to the test code because I couldn't figure out how to work around that.
-  
+My project attempts to create a parse tree from `python_test_code.py`. Frankly, I have no idea how well it works overall, because I can't figure out how to run it, but each individual line I've tested works. Most of the grammar I wrote can be used on any Python 3 file, I think, but some of it is specific to the test code because I couldn't figure out how to work around that.
+
+I tested the rules with each unique line of code I could find in `python_test_code.py`, to make sure it worked correctly. I did not figure out how to manage indentation, so I've submitted the last working version I have.
+ 
+Everything inside the "afterExecutingAntlr" folder is what appears after running `antlr4 Python.g4`; I wasn't sure what all should be turned in.
 
 ## SETUP / ENVIRONMENTAL STEPS
 For setup... *(I'm on Windows.)*
@@ -27,9 +30,9 @@ For setup... *(I'm on Windows.)*
   - Add their location to `Path`.
   - Create a new system environmental variable named `CLASSPATH` - `.;[absolute path to the antlr .jar file];%CLASSPATH%`.
 - For testing, I used Command Prompt.
-  - antlr4 (name).g4
-  - javac (name)*.java
-  - grun (name) (rule) (test file) -gui
+  - `antlr4 (name).g4`
+  - `javac (name)*.java`
+  - `grun (name) (rule) (test file) -gui`
 
 ## HOW TO RUN
 Honestly? I tested pretty much the whole thing using the grun.bat file; unfortunately, I couldn't get a handler running. Because of this, I'm not sure how it would run; the root of the tree is usually the first parser rule, but here, that's `comment`, and a comment does not the root of a tree make.
