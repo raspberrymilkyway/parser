@@ -34,7 +34,7 @@ For setup... *(I'm on Windows.)*
 ## HOW TO RUN
 Honestly? I tested pretty much the whole thing using the grun.bat file; unfortunately, I couldn't get a handler running. Because of this, I'm not sure how it would run; the root of the tree is usually the first parser rule, but here, that's `comment`, and a comment does not the root of a tree make.
 
-==I'd say run it with the root as `ifs`==, since there are a lot of them and a lot of them are nested. If multiple calls are necessary, continue down the line; `whiles` and `fors` would be next, then `varhandle`, `arithmetic`, `conditional`, and `print`. (Neither `cast` nor `string` need be called.)
+**I'd say run it with the root as `ifs`**, since there are a lot of them and a lot of them are nested. If multiple calls are necessary, continue down the line; `whiles` and `fors` would be next, then `varhandle`, `arithmetic`, `conditional`, and `print`. (Neither `cast` nor `string` need be called.)
 
 
 
