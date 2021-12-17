@@ -1,21 +1,6 @@
-// first parser rules then LEXER ONES
-// lexer rules analyzed in order they appear; can be ambiguous
-    /*
-        ORGANIZE THIS SO COMMENTS COME FIRST. figure out other ambiguities later
-        ifelse -> anythingelse -> varname (varname needs to be last)
-    */
-
+// Kylee Willis (kwcnr)
 grammar Python;
 
-//needs to handle if/else, variable definitions, loops, arithmetic, assignments, conditionals, comments, and whitespace
-/*
-    currently works:
-        variable definitions and assignments
-        conditional statements (not in anything; just conditionals)
-        comments
-        whitespace, ish.
-        loops and if/else, in terms of recognizing the initial bit
-*/
 
 
 //in an actual parser, comment would need to be more complex. the test file, however, only has comments on their own lines, so I only interpreted that type.
@@ -33,8 +18,9 @@ fors
     : 'for' VARNAME 'in' 'range(' (NUM | VARNAME | arithmetic | cast) ',' (NUM | VARNAME | arithmetic | cast) ')' ':' //for each specifically
     ;
 
-variable
-    : VARNAME ASOP (NUM | arithmetic | string | cast)
+//var[iable]handle[-ing]
+varhandle
+    : VARNAME ASOP (VARNAME | NUM | arithmetic | string | cast)
     ;
 
 arithmetic
@@ -42,7 +28,7 @@ arithmetic
     ;
 
 conditional
-    : (VARNAME | NUM | string) WS* CON WS* (VARNAME | NUM | string)
+    : (VARNAME | NUM | string | arithmetic) CON (VARNAME | NUM | string | arithmetic)
     ;
 
 print
@@ -72,9 +58,11 @@ string
     : SQ
     | DQ
     ;
+//S[ingle]Q[uotes]
 SQ
     : '\'' ~[^']* '\''
     ; //curiously, this breaks without ~
+//D[ouble]Q[uotes]
 DQ
     : '"' ~[^"]* '"'
     ;
@@ -86,7 +74,7 @@ IFELSE
     | 'else'
     ;
 
-//so CON[ditionals] should obviously have several types (i.e. ">" and "<") that only respond to numbers. however, I ran some strings with those in the IDLE IDE and it... I think it compares string length? I'm not sure, but it's valid.
+//CON[ditionals] with a string > string are valid in Python
 CON
     : '=='
     | '<='
@@ -121,6 +109,7 @@ NUM
     : [-]?[0-9]+
     ;
 
+//COM[ment]
 COM
     : '#' ~[^\n\r]*
     ;
