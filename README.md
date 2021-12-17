@@ -52,4 +52,4 @@ TLDR; you'd need a script to call the lexer and parser created upon the test fil
 - Yeah, so to follow up about concatenation, nothing I have managed to figure out in the hour I've been trying has fixed it. I gave up and added specific formats to "caststr". It seems that if I add a + by itself anywhere outside of arithmetic, it refuses to ever be arithmetic again.
 - Also, there's no... points for casts or prints, despite how many times they show up in python_test_code.py - was it necessary to do all this, or could I have parsed specific strings from the beginning??
 - How... do I run this on a file? I've tested it with individual lines, but I can't see how indention works without testing the file.
-- *Indentions* \*angry hiss\*
+- *Indentations* \*angry hiss\*
